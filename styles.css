@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0f0f1a;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #1a1a2e, #16213e, #0f3460);
+    z-index: -1;
+}
+
+.calculator {
+    width: 380px; /* Increased from 320px */
+    border-radius: 25px; /* Slightly larger radius */
+    padding: 30px; /* Increased padding */
+    background: rgba(15, 15, 26, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.05);
+    z-index: 1;
+}
+
+.brand {
+    color: #e94560;
+    font-size: 1.4rem; /* Slightly larger */
+    margin-bottom: 20px; /* More spacing */
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(233, 69, 96, 0.5);
+}
+
+.brand span {
+    color: #fff;
+    font-weight: 400;
+}
+
+.display-container {
+    margin-bottom: 25px; /* More spacing */
+    padding: 15px; /* Increased padding */
+    border-radius: 15px; /* Larger radius */
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.previous-operand {
+    min-height: 25px; /* Slightly taller */
+    font-size: 1.1rem; /* Larger text */
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    padding-right: 8px; /* More padding */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.display {
+    width: 100%;
+    height: 70px; /* Taller display */
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 2.5rem; /* Larger display text */
+    text-align: right;
+    font-family: 'Orbitron', sans-serif;
+    outline: none;
+    padding: 8px; /* More padding */
+}
+
+.error {
+    color: #ff6b6b;
+    font-size: 1rem; /* Slightly larger */
+    height: 25px; /* More space */
+    margin-bottom: 15px; /* More spacing */
+    text-align: center;
+    text-shadow: 0 0 8px rgba(255, 107, 107, 0.5);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px; /* Larger gap between buttons */
+}
+
+button {
+    height: 75px; /* Taller buttons */
+    border: none;
+    border-radius: 15px; /* More rounded */
+    font-size: 1.5rem; /* Larger button text */
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Rest of the button styles remain the same */
+button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+}
+
+button:hover::after {
+    transform: translateX(100%);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.btn-number {
+    background: rgba(25, 25, 45, 0.7);
+}
+
+.btn-number:hover {
+    background: rgba(35, 35, 65, 0.7);
+}
+
+.btn-operator {
+    background: rgba(233, 69, 96, 0.2);
+    color: #e94560;
+}
+
+.btn-operator:hover {
+    background: rgba(233, 69, 96, 0.3);
+}
+
+.btn-equals {
+    background: rgba(233, 69, 96, 0.7);
+    grid-column: span 2;
+    color: white;
+}
+
+.btn-equals:hover {
+    background: rgba(233, 69, 96, 0.8);
+    box-shadow: 0 0 20px rgba(233, 69, 96, 0.5);
+}
+
+.btn-clear, .btn-delete {
+    background: rgba(0, 150, 200, 0.2);
+    color: #00a8cc;
+}
+
+.btn-clear:hover, .btn-delete:hover {
+    background: rgba(0, 150, 200, 0.3);
+}
+
+@media (max-width: 500px) {
+    .calculator {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    button {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+    
+    .display {
+        font-size: 2rem;
+        height: 60px;
+    }
+}
