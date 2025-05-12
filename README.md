@@ -55,27 +55,26 @@ Calculator/
 ├── script.js      # JavaScript logic + keyboard support
 └── README.md      # You're here!
 ```
+---
 🛠️ Built With
+
 HTML5
-
 CSS3 (with neon effects)
-
 JavaScript (vanilla)
+---
 
 📌 To-Do / Future Enhancements
 🧮 Add scientific mode
 🌓 Dark mode toggle (currently always neon)
 ⏳ Calculation history
 🕹️ Button press animations
-
+---
 📬 Contact
 Made with ❤️ by Parvv04
 Feel free to fork, contribute, or drop feedback! 😊
 
-⭐️ If you like this calculator, give it a star on GitHub!
-
+⭐️ If you like this calculator, give it a star on GitHub
 ---
-
 Let me know if you want to:
 - Add GitHub Pages deployment instructions
 - Get a screenshot banner created for your calculator preview
