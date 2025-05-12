@@ -57,17 +57,16 @@ Calculator/
 ```
 ---
 🛠️ Built With
-
-HTML5
-CSS3 (with neon effects)
-JavaScript (vanilla)
+-HTML5
+-CSS3 (with neon effects)
+-JavaScript (vanilla)
 ---
 
 📌 To-Do / Future Enhancements
-🧮 Add scientific mode
-🌓 Dark mode toggle (currently always neon)
-⏳ Calculation history
-🕹️ Button press animations
+-🧮 Add scientific mode
+-🌓 Dark mode toggle (currently always neon)
+-⏳ Calculation history
+-🕹️ Button press animations
 ---
 📬 Contact
 Made with ❤️ by Parvv04
