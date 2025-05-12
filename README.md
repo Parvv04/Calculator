@@ -2,8 +2,6 @@
 
 A **stylish, responsive, and keyboard-friendly** calculator made with `HTML`, `CSS`, and `JavaScript`, featuring a **futuristic neon UI**, smooth interactions, and basic arithmetic functions.
 
-![Neon Calculator Banner](https://user-images.githubusercontent.com/your-image.png)
-
 ---
 
 ## ✨ Features
@@ -46,6 +44,7 @@ start index.html    # Windows
 open index.html     # macOS
 ```
 🖼️ UI Preview
+![Screenshot 2025-05-12 224523](https://github.com/user-attachments/assets/37c7ac04-d835-4649-9c94-46ab311d5823)
 
 📁 File Structure
 ```
